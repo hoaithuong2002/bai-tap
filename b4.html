@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số lớn nhất nhỏ nhất</title>
+</head>
+<body>
+<input placeholder="nhập số vào đây" id="a" >
+<input placeholder="nhập số vào đây" id="b" >
+<input placeholder="nhập số vào đây" id="c" >
+<input placeholder="nhập số vào đây" id="d" >
+<input placeholder="nhập số cần kiểm tra vào đây" id="number" >
+<button onclick="solonsobe()">hiển thị kết quả</button>
+<p id="result"></p>
+<script>
+   function solonsobe() {
+    let a = document.getElementById('a').value;
+    let b = document.getElementById('b').value;
+    let c = document.getElementById('c').value;
+    let d = document.getElementById('d').value;
+    let number = document.getElementById('number').value;
+
+       alert('số lớn nhất là' + Math.max((Math.max((Math.max(a,b)),c)),d));
+       alert('số bé nhất là' + Math.min((Math.min((Math.min(a,b)),c)),d));
+       if (number != Math.max((Math.max((Math.max(a,b)),c)),d)) {
+              alert(number +'không phải số lớn nhất')} else
+       {
+           alert( Math.max((Math.max((Math.max(a,b)),c)),d)+'là số lớn nhất')}
+       if (number !==Math.min((Math.min((Math.min(a,b)),c)),d)) {
+           alert(number +'không phải số bé nhất')}else
+       {
+           alert(Math.min((Math.min((Math.min(a,b)),c)),d) +'là số be nhất')}
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    // leta = 100;
+    // let b = 65;
+    // let c = 55;
+    // let d = 33;
+    // let number =50;
+    // alert('số lớn nhất là' + Math.max((Math.max((Math.max(a,b)),c)),d));
+    // if (number !==Math.max((Math.max((Math.max(a,b)),c)),d)) {
+    //     alert(number +'không phải số lớn nhất')
+    // }
+
+    // function Max(a, b) {
+    //     if (a > b) {
+    //         alert() ;
+    //     } else alert('b không phải số lớn nhất')
+    // }
+    //
+    // alert(Max())
+    // // alert(
+    // // max = Max(a, b),
+    // // max = Max(max, c),
+    // // max = Max(max, d)
+    // // )
+    // function Min(c, d) {
+    //     if (c > d) {
+    //         alert(d);
+    //     } else alert(' c không phải số nhỏ nhất')
+    // }
+    //
+    // alert(Min())
+    // // alert(
+    // //     min = Min(a, b),
+    // //     min = Min(min, c),
+    // //     min = Min(min, d)
+    // // )
+</script>
+</body>
+</html>

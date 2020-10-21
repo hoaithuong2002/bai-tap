@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tiền đi taxi</title>
+</head>
+<body>
+<input placeholder="nhập vào số km " id="km">
+<button onclick="tinhtien()">tính</button>
+<script>
+    let km = 0;
+    let tongTien = 0;
+
+    function tinhtien() {
+        km = document.getElementById('km').value;
+        if (km == 1) {
+            alert(tongTien = 15000 +'là số tiền phải trả')
+        } else if (km >= 2 && km <= 5) {
+
+            alert(tongTien = (13500 * (km - 1)) + 15000 +'là số tiền phải trả')
+        } else if (km >= 6) {
+            alert(tongTien = (11000 * (km - 5)) + ((13500 * 4) + 15000)+'là số tiền phải trả')
+        }
+        else if (km > 120) {
+            tongTien = (11000 * (km - 5)) + ((13500 * 4) + 15000) * (10 / 100);
+            alert(tongTien = (11000 * (km - 5)) + ((13500 * 4) + 15000) * (10 / 100) +' là số tiền phải trả')
+        }
+    }
+
+
+</script>
+</body>
+</html>
