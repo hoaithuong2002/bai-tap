@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng Số Tờ Tiền</title>
+</head>
+<body>
+<input placeholder="nhập vào số tiền" id="sotien">
+<button onclick="soto()">hiển thị</button>
+<script>
+    function soto() {
+        let to = 0;
+        let sotien = document.getElementById('sotien').value;
+        let tien = [50000, 20000, 10000, 5000, 2000, 1000];
+        for (let i = 0; i < 6; i++) {
+            to = sotien / tien[i];
+            if (sotien % tien[i]== 0) {
+                alert('so tờ loại ' + tien[i] + ' là ' + to)
+            }
+            // sotien = sotien % tien[i];
+        }
+    }
+</script>
+</body>
+</html>
