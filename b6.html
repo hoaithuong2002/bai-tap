@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp loại học sinh trong lớp</title>
+</head>
+<body>
+<input placeholder="Nhập Họ và Tên">
+<input placeholder="Nhập Điểm Toán" id="toan" type="number">
+<input placeholder="Nhập Điểm Lý" id="Ly" type="number">
+<input placeholder="Nhập Điểm Hoá" id="Hoa" type="number">
+<button onclick="tinhdiemtb()">KET QUA</button>
+<script>
+    function tinhdiemtb() {
+        let toan = +document.getElementById('toan').value;
+        let Ly = +document.getElementById('Ly').value;
+        let Hoa = +document.getElementById('Hoa').value;
+        let đtb = (toan + Ly + Hoa ) / 3;
+        alert(đtb);
+        if (đtb >=9.0){
+            alert('học sinh xuất sắc')
+        }else if (9.0 > đtb && đtb>= 8.0){
+            alert('học sinh giỏi')
+        }else if ( 8.0 > đtb && đtb>= 6.5){
+            alert('học sinh khá')
+        }else if ( 6.5 > đtb && đtb>= 5.0){
+            alert('học sinh trung bình')
+        }else  if (5.0 > đtb >= 3.0){
+            alert('học sinh yếu')
+        }else  alert('học sinh kém')
+
+    }
+</script>
+</body>
+</html>
