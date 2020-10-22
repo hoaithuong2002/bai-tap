@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Đếm Số khác nhau</title>
+</head>
+<body>
+<script>
+    let arr = [1, 1, 2,2, 3, 4,5,6,9,8,6];
+    function demso(arr) {
+        let newArr = [];
+        let j = 0;
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] !== arr[i + 1]) {
+                newArr[j] = arr[i];
+                j += 1;
+            }
+        }
+        return newArr.length;
+
+    }
+
+    alert(demso(arr));
+</script>
+</body>
+</html>
