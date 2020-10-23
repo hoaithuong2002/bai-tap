@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Đếm số lần xuất hiện</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = ['x', 5, 5, 'x', 2, 2, 'x', 2, 'x', 'x'];
+    let counts = {};
+    for (let i = 0; i < arr.length; i++) {
+        let num = arr[i];
+        counts[num] = counts[num] ? counts[num] + 1 : 1;
+    }
+    alert( counts['x']);
+
+</script>
 </body>
 </html>
