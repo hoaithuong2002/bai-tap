@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tính tổng các phần tử không âm</title>
+</head>
+<body>
+<input placeholder="nhập số cần tính" id="number">
+<button onclick="tinhtong()">tính</button>
+<script>
+
+    let sum = 0;
+    function tinhtong() {
+        let num = document.getElementById('number').value;
+        let number = num.toString();
+        for (let i = 0; i <number.length ; i++) {
+            if(number[i]>0){
+                sum += parseInt(number[i]);
+            }
+        }
+        alert(sum);
+    }
+
+</script>
+</body>
+</html>
