@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Chẵn tăng lẻ giảm </title>
 </head>
 <body>
-$END$
+<script>
+    let a = [2, 3, 1, 4, 7,5,6, 9,8];
+    let sochan = [];
+    let sole = [];
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] % 2 == 0) {
+            sochan.push(a[i])
+        } else sole.push(a[i])
+
+    }
+    for (let i = 0; i < sochan.length -1; i++) {
+            if (sochan[i] > sochan[i+1]){
+                let temp = sochan[i];
+                sochan[i] = sochan[i+1];
+                sochan[i+1] =temp;
+            }
+    }
+    for (let i = 0; i < sole.length -1; i++) {
+        if (sole[i] > sole[i+1]){
+            let temp = sole[i];
+            sole[i] = sole[i+1];
+            sole[i+1] =temp;
+        }
+    }
+
+    alert("số chẵn là : " + sochan.toString() + " và  số lẻ là :   " + sole.toString());
+</script>
 </body>
 </html>
