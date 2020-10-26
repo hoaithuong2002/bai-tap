@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>thay số 0 vào chỗ trùng</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [1, 1, 2, 2, 3, 4];
+
+    function thaysotrung(arr) {
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == arr[i + 1]) {
+                arr[i] = 0;
+            }
+        }
+        return arr.toString();
+
+    }
+    alert(thaysotrung(arr));
+
+
+</script>
 </body>
 </html>
